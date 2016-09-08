@@ -23,11 +23,40 @@ public class TicketMachine
      * Note that the price must be greater than zero, and there
      * are no checks to ensure this.
      */
+    public TicketMachine()
+    {
+        price = 1000;
+        balance = 0;
+        total = 0;
+    }
+    
     public TicketMachine(int cost)
     {
         price = cost;
         balance = 0;
         total = 0;
+    }
+    
+    public void empty()
+    {
+        total=0;
+    }
+    
+    public void prompt()
+    {
+        System.out.println("Please insert the correct amount of money");
+    }
+    public void setPrice(int cost)
+    {
+        price=cost;
+    }
+    public void showPrice()
+    {
+        System.out.println("The price of a ticket is"+ price +"cents");
+    }
+    public void discount(int amount)
+    {
+         price-=amount;
     }
 
     /**
