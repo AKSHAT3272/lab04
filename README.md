@@ -6,7 +6,7 @@ All of these questions deal with the ticket machine example bundled in this repo
 ```
 public void setPrice(int cost)
 ```
-Because the method is void so it cannot return the value.
+A method interects with an object and constructor returns an object.So if the the constructor returns nothing the method returns void(or nothing).
 
 ## Complete the body of the setPrice method so that it assigns the value of its parameter to the price field. Write your new method in the `lab04-ticket-machine`.
 	public void setPrice(int cost)
